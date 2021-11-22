@@ -13,14 +13,20 @@ trisurf2stl(filename,k,v)
 %
 %   filename is the STL file to be saved.
 %   k is a three-column matrix where each row represents a triangular facet. The values represent the row indices of the input points.
-%   v is a three-column matrix. v= [X,Y,Z]
+%   v, the input points, is a three-column matrix. v= [X,Y,Z]
 %
 %   This program is rewritten from surf2stl of Bill McDonald.
 %
 %   Author: Weidong Shen 2021/11/22
 ```
 
+## Case
 
+```matlab
+v = ceil(rand(10,3)*10);
+k = convhulln(v); 
+trisurf2stl('surf.STL',k,v);
+```
 
 
 
