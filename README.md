@@ -1,11 +1,11 @@
-# trimodel2stl
+# matlab-trisurf2stl
 Export the model represented by triangular surface built in Matlab to STL file.
 
 ## Usage
 
 Copy trisurf2stl.m to your program directory.
 
-
+The parameters of **`trisurf2stl(filename,k,v)`** are described as follows:
 
 ```matlab
 trisurf2stl(filename,k,v)
